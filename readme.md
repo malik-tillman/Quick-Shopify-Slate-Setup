@@ -6,7 +6,7 @@ Use this to get started on developing a Shopify theme quick and easy. [Even thou
 Steps
 ------
 
-##### Install Slate and addition Slate helper tools. PRIMORDIALS IS NOT DEFINED!
+##### Install Slate and addition Slate helper tools. 
 
 `npm i @shopify/slate @shopify/slate-tools`
 
@@ -18,6 +18,17 @@ or
 
 `slate theme <theme-name>`
 
-Convert existing theme to work on Slate
-------
-Place the theme unzipped in the root directory
+PRIMORDIALS IS NOT DEFINED!
+===
+
+Place this into `npm-shrinkwrap.json` and re-run `npm install`.
+
+```json
+{
+  "dependencies": {
+    "graceful-fs": {
+        "version": "4.2.2"
+     }
+  }
+}
+```
